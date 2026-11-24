@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SEM LEGENDA — Workshop de inglês</title>
+<meta name="description" content="SEM LEGENDA é um workshop presencial de inglês para a vida real, em Itapetininga/SP, com Teacher Bruno Santos. Quatro horas de prática, situações reais e coffee break.">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="canonical" href="https://semlegendateacherbruno.com.br/">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="SEM LEGENDA">
+<meta property="og:title" content="SEM LEGENDA — Um workshop de inglês para a vida real">
+<meta property="og:description" content="Seu inglês começa quando você começa a usar. Workshop presencial em Itapetininga/SP com Teacher Bruno.">
+<meta property="og:url" content="https://semlegendateacherbruno.com.br/">
+<meta property="og:image" content="https://semlegendateacherbruno.com.br/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script>document.documentElement.classList.add("js");if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("anim")</script>
+<link rel="preload" href="assets/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/figtree-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Anton";src:url(assets/fonts/anton-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Figtree";src:url(assets/fonts/figtree-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Figtree";src:url(assets/fonts/figtree-latin-500-normal.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Figtree";src:url(assets/fonts/figtree-latin-600-normal.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Figtree";src:url(assets/fonts/figtree-latin-700-normal.woff2) format("woff2");font-weight:700;font-display:swap}
+/* VOICE  — direto, jovem, confiante; um amigo que fala inglês, não uma escola.
+   IDEA   — uma conversa de WhatsApp sem resposta; o site é o que vem depois dela.
+   PICTURE— o próprio chat, grande, no layout; depois a bolha de mensagem vira o motivo visual.
+   COLOUR/TYPE — branco, tinta #111, azul-cobalto #315EDB; Anton (como o logo) + Figtree.
+   LAYOUT — editorial, alinhado à esquerda, uma faixa azul só para o professor. */
+:root{
+  color-scheme:light;
+  --bg:#FFFFFF; --ink:#111111; --cobalt:#315EDB; --cobalt-dk:#2447AE; --tint:#EEF2FD;
+  --bubble:#F1F2F4; --line:#E4E6EA; --mute:#565A62;
+  --display:"Anton","Impact","Arial Narrow",sans-serif;
+  --text:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --r-bubble:22px; --r-panel:28px; --wrap:1240px; --hdr:68px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:calc(var(--hdr) + 12px);-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 var(--text);overflow-x:clip;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,p{margin:0}
+h1,h2,.display{font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.005em;line-height:1.02;text-wrap:balance}
+h2{font-size:clamp(36px,4.6vw,60px)}
+h3{font-size:20px;line-height:1.25;font-weight:700}
+.wrap{max-width:var(--wrap);margin:0 auto}
+.band{padding:clamp(72px,9vw,128px) max(5vw,20px)}
+.lead{font-size:clamp(18px,1.6vw,21px);line-height:1.5;color:var(--mute);max-width:60ch}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--cobalt);outline-offset:3px;border-radius:6px}
+
+/* Botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;border:2px solid var(--cobalt);background:var(--cobalt);color:#fff;font:700 15px/1 var(--text);letter-spacing:.03em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .2s,border-color .2s,transform .2s var(--ease),box-shadow .2s}
+.btn:hover{background:var(--cobalt-dk);border-color:var(--cobalt-dk);transform:translateY(-2px);box-shadow:0 10px 24px -12px rgba(49,94,219,.7)}
+.btn:active{transform:translateY(0)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff;box-shadow:none}
+.btn.white{background:#fff;border-color:#fff;color:var(--cobalt)}
+.btn.white:hover{background:var(--ink);border-color:var(--ink);color:#fff;box-shadow:none}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* Cabeçalho */
+.hdr{position:fixed;inset:0 0 auto;z-index:50;height:var(--hdr);display:flex;align-items:center;gap:24px;padding:0 max(5vw,20px);background:rgba(255,255,255,.86);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--line)}
+.hdr .logo img{height:44px;width:auto}
+.hdr nav{display:flex;gap:28px;margin-left:auto;font-weight:600;font-size:15px}
+.hdr nav a{text-decoration:none;padding:8px 0;border-bottom:2px solid transparent;transition:border-color .2s,color .2s}
+.hdr nav a:hover{color:var(--cobalt);border-color:var(--cobalt)}
+.hdr .btn{min-height:42px;padding:0 18px;font-size:13px}
+@media (max-width:900px){.hdr nav{display:none}.hdr .btn{margin-left:auto}}
+
+/* ===== HISTÓRIA DO CHAT ===== */
+.story{position:relative}
+.stage{position:relative;padding:calc(var(--hdr) + 40px) max(5vw,20px) 56px}
+.stage-grid{position:relative;display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:clamp(36px,6vw,96px);align-items:center;max-width:var(--wrap);margin:0 auto;transition:opacity .6s var(--ease),transform .6s var(--ease),filter .6s}
+.lede h1{font-size:clamp(46px,6.2vw,90px);line-height:1.04}
+.lede .lead{margin-top:24px;max-width:34em}
+.lede .actions{margin-top:32px;display:flex;flex-wrap:wrap;gap:12px}
+.facts{margin:34px 0 0;padding:20px 0 0;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:10px 28px;list-style:none;font-weight:600;font-size:15px}
+.facts li{display:flex;align-items:center;gap:8px;white-space:nowrap}
+.facts svg{width:18px;height:18px;color:var(--cobalt);flex:none}
+.facts .price{color:var(--cobalt)}
+
+.chat{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:var(--r-panel);background:#fff;overflow:hidden;width:100%;max-width:480px;justify-self:end;box-shadow:0 40px 80px -48px rgba(17,17,17,.35)}
+.chat-top{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.avatar{width:42px;height:42px;border-radius:50%;background:var(--tint);color:var(--cobalt);display:grid;place-items:center;font-weight:700;font-size:15px;flex:none}
+.chat-top b{display:block;font-size:16px;line-height:1.2}
+.chat-top small{color:var(--mute);font-size:13px}
+.chat-top .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#2DB55D;margin-right:6px;vertical-align:1px}
+.chat-body{display:flex;flex-direction:column;justify-content:flex-end;gap:0;padding:20px 18px 14px;min-height:380px}
+.day{align-self:center;font-size:12px;font-weight:600;color:var(--mute);background:var(--bubble);padding:5px 12px;border-radius:999px;margin-bottom:auto}
+.row{display:grid;grid-template-rows:1fr;transition:grid-template-rows .5s var(--ease)}
+.row>div{overflow:hidden;display:flex;padding-top:10px}
+.row.out>div{justify-content:flex-end}
+.bubble{max-width:86%;padding:13px 16px 9px;border-radius:var(--r-bubble);border-bottom-left-radius:6px;background:var(--bubble);font-size:17px;line-height:1.4;transition:opacity .45s var(--ease),transform .5s var(--ease)}
+.bubble time{display:block;text-align:right;font-size:11.5px;color:var(--mute);margin-top:4px}
+.typing{background:var(--cobalt);border-radius:var(--r-bubble);border-bottom-right-radius:6px;padding:16px 18px;display:flex;gap:6px;transition:opacity .45s var(--ease),transform .5s var(--ease)}
+.typing i{width:8px;height:8px;border-radius:50%;background:#fff;opacity:.5}
+@media (prefers-reduced-motion:no-preference){.typing i{animation:blink 1.2s infinite}.typing i:nth-child(2){animation-delay:.18s}.typing i:nth-child(3){animation-delay:.36s}}
+@keyframes blink{0%,60%,100%{opacity:.35;transform:translateY(0)}30%{opacity:1;transform:translateY(-4px)}}
+.composer{display:flex;align-items:center;gap:10px;padding:12px 14px 14px;border-top:1px solid var(--line)}
+.composer .field{flex:1;height:44px;border-radius:999px;background:var(--bubble);display:flex;align-items:center;padding:0 18px;color:var(--mute);font-size:15px}
+.composer .caret{width:2px;height:20px;background:var(--cobalt);margin-right:8px}
+@media (prefers-reduced-motion:no-preference){.composer .caret{animation:caret 1s steps(1) infinite}}
+@keyframes caret{50%{opacity:0}}
+.composer .send{width:44px;height:44px;border-radius:50%;background:var(--cobalt);display:grid;place-items:center;color:#fff;flex:none}
+.composer .send svg{width:20px;height:20px}
+.peek,.hint{display:none}
+html:not(.anim) .row[data-until]{display:none}
+
+.impact{max-width:var(--wrap);margin:0 auto;text-align:center;padding:72px 0 8px}
+.impact p{font-family:var(--display);text-transform:uppercase;line-height:1.08;text-wrap:balance}
+.impact .l1{font-size:clamp(38px,5.4vw,76px);max-width:15ch;margin:0 auto}
+.impact .l2{font-size:clamp(54px,9vw,140px);margin-top:32px;line-height:1.04}
+.tag{display:inline-block;background:var(--cobalt);color:#fff;padding:.02em .2em .04em;border-radius:.12em;transform:rotate(-3deg);margin:0 .04em}
+
+/* Modo animado (JS ativo e sem redução de movimento) */
+.anim .story{height:460vh}
+.anim .stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;padding-bottom:28px;display:flex;align-items:center}
+.anim .stage-grid{width:100%}
+.anim .row.hid{grid-template-rows:0fr}
+.anim .row.hid .bubble,.anim .row.hid .typing{opacity:0;transform:translateY(18px) scale(.97)}
+.anim .chat{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease) .25s,transform .8s var(--ease) .25s}
+.anim .ready .chat{opacity:1;transform:none}
+.anim .impact{position:absolute;inset:var(--hdr) max(5vw,20px) 0;display:flex;flex-direction:column;justify-content:center;padding:0;pointer-events:none}
+.anim .impact .l1,.anim .impact .l2{opacity:0;transform:translateY(28px);transition:opacity .6s var(--ease),transform .7s var(--ease)}
+.anim .at-4 .stage-grid{opacity:0;transform:translateY(-40px) scale(.98);filter:blur(4px);pointer-events:none}
+.anim .at-4 .impact .l1{opacity:1;transform:none}
+.anim .at-5 .impact .l2{opacity:1;transform:none}
+.anim .hint{display:none;position:absolute;left:50%;bottom:max(18px,env(safe-area-inset-bottom));transform:translate(-50%,12px);flex-direction:column;align-items:center;gap:8px;padding:6px 14px;border:0;background:none;color:var(--ink);font:700 14px/1.2 var(--text);cursor:pointer;opacity:0;transition:opacity .6s var(--ease),transform .6s var(--ease);z-index:2}
+.anim .ready .hint{opacity:1;transform:translate(-50%,0);transition-delay:1.1s}
+.anim .ready.at-1 .hint{opacity:0;transform:translate(-50%,12px);pointer-events:none;transition-delay:0s}
+.hint .arrow,.hint-in .arrow{position:relative;width:52px;height:52px;border-radius:50%;background:var(--cobalt);color:#fff;display:grid;place-items:center;box-shadow:0 12px 26px -12px rgba(49,94,219,.8)}
+.hint .arrow::before,.hint-in .arrow::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--cobalt)}
+.hint svg,.hint-in svg{width:24px;height:24px}
+.hint:hover .arrow{background:var(--cobalt-dk)}
+.hint .m{display:none}
+.hint{white-space:nowrap}
+.chat-body{position:relative}
+.hint-in{display:none}
+.anim .hint-in{display:flex;position:absolute;inset:56px 16px 16px;flex-direction:column;align-items:center;justify-content:center;gap:12px;border:0;background:none;color:var(--ink);font:700 15px/1.3 var(--text);cursor:pointer;opacity:0;transition:opacity .6s var(--ease);z-index:1}
+.anim .ready .hint-in{opacity:1;transition-delay:1.1s}
+.anim .ready.at-1 .hint-in{opacity:0;pointer-events:none;transition-delay:0s}
+.hint-in small{font-weight:500;font-size:14px;color:var(--mute)}
+.hint-in:hover .arrow{background:var(--cobalt-dk)}
+@media (prefers-reduced-motion:no-preference){.hint-in svg{animation:nudge 1.5s var(--ease) infinite}.hint-in .arrow::before{animation:ring 1.8s var(--ease) infinite}}
+@media (prefers-reduced-motion:no-preference){.hint svg{animation:nudge 1.5s var(--ease) infinite}.hint .arrow::before{animation:ring 1.8s var(--ease) infinite}}
+@keyframes nudge{0%,100%{transform:translateY(-3px)}50%{transform:translateY(4px)}}
+@keyframes ring{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.55);opacity:0}}
+
+@media (max-width:900px){
+  .stage-grid{grid-template-columns:minmax(0,1fr)}
+  .chat{justify-self:center}
+  .anim .stage{align-items:stretch;padding-top:calc(var(--hdr) + 20px)}
+  .anim .stage-grid{align-items:stretch}
+  .anim .lede,.anim .chat{grid-area:1/1}
+  .anim .lede{align-self:center;transition:opacity .5s var(--ease),transform .6s var(--ease)}
+  .anim .chat{align-self:center;max-height:calc(100svh - var(--hdr) - 76px)}
+  .anim .ready .chat{opacity:0;transform:translateY(40px);pointer-events:none}
+  .anim .at-1 .lede{opacity:0;transform:translateY(-36px);pointer-events:none}
+  .anim .ready.at-1 .chat{opacity:1;transform:none;pointer-events:auto;transition-delay:.1s}
+  .anim .peek{display:flex;align-items:center;gap:12px;margin-top:26px;padding:12px 14px;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:0 18px 40px -28px rgba(17,17,17,.45);opacity:0;transform:translateY(12px);transition:opacity .6s var(--ease) .9s,transform .6s var(--ease) .9s}
+  .anim .ready .peek{opacity:1;transform:none}
+  .peek .avatar{width:38px;height:38px;font-size:13px}
+  .peek>div{flex:1}
+  .peek b{display:block;font-size:14px}
+  .peek span{display:block;font-size:14px;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .anim .hint{display:flex}.anim .hint-in{display:none}
+  .hint .d{display:none}.hint .m{display:inline}
+  .anim .lede{padding-bottom:84px}
+}
+@media (max-width:600px){
+  .lede h1{font-size:clamp(40px,11.5vw,56px)}
+  .lede .lead{margin-top:16px;font-size:17px}
+  .lede .actions{margin-top:22px}
+  .lede .actions .btn{width:100%}
+  .facts{margin-top:22px;padding-top:16px;gap:8px 18px;font-size:14px}
+  .bubble{font-size:16.5px}
+  .chat-body{min-height:300px}
+  .impact .l1{font-size:clamp(36px,10vw,48px)}
+  .impact .l2{font-size:clamp(50px,13.6vw,64px)}
+}
+@media (max-width:600px) and (max-height:700px){.anim .peek{display:none}.lede .lead{font-size:16px}}
+
+/* ===== Seções ===== */
+.rv{transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.anim .rv:not(.in){opacity:0;transform:translateY(22px)}
+
+/* Problema */
+.problem .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,96px);align-items:start}
+.problem .lead{margin-top:22px}
+.pains{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.pains li{display:flex;gap:18px;align-items:flex-start;padding:22px 0;border-bottom:1px solid var(--line);font-size:clamp(18px,1.7vw,21px);font-weight:500;line-height:1.4}
+.pains .dots{flex:none;display:flex;gap:4px;padding:10px 12px;border-radius:14px 14px 14px 4px;background:var(--bubble);margin-top:-2px}
+.pains .dots i{width:6px;height:6px;border-radius:50%;background:#A3A7AE}
+.problem .close{margin-top:28px;font-weight:600;font-size:19px}
+@media (max-width:900px){.problem .wrap{grid-template-columns:minmax(0,1fr)}}
+
+/* Solução */
+.solution{border-top:1px solid var(--line)}
+.solution .head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,6vw,96px);align-items:end}
+.statement{margin-top:clamp(48px,6vw,80px);font-family:var(--display);text-transform:uppercase;font-size:clamp(30px,3.6vw,48px);line-height:1.08;max-width:22ch}
+.statement span{color:var(--cobalt)}
+.pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,3vw,40px);margin-top:48px}
+.pillars div{padding-top:20px;border-top:2px solid var(--ink)}
+.pillars p{margin-top:10px;color:var(--mute)}
+.video{margin-top:56px;border-radius:var(--r-panel);overflow:hidden;aspect-ratio:16/9;background:var(--bubble)}
+.video iframe,.video video{width:100%;height:100%;border:0;display:block}
+@media (max-width:900px){.solution .head,.pillars{grid-template-columns:minmax(0,1fr)}}
+
+/* Experiências */
+.exp .top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:20px}
+.exp .top p{color:var(--mute);max-width:34ch}
+.cards{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px;margin-top:48px}
+.card{grid-column:span 2;border:1px solid var(--line);border-radius:var(--r-panel);padding:26px;display:flex;flex-direction:column;gap:18px;background:#fff;transition:border-color .25s,transform .3s var(--ease)}
+.card:nth-child(4),.card:nth-child(5){grid-column:span 3}
+.card:hover{border-color:var(--cobalt);transform:translateY(-3px)}
+.card p.d{color:var(--mute);font-size:16px}
+.card .en{margin-top:auto;align-self:flex-start;max-width:100%;background:var(--ink);color:#fff;padding:12px 16px;border-radius:var(--r-bubble);border-bottom-left-radius:6px;font-weight:600;font-size:17px}
+.card .sub{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s var(--ease)}
+.card .sub>span{overflow:hidden;font-size:15px;color:var(--cobalt);font-weight:600}
+.card.open .sub{grid-template-rows:1fr}
+.legend-btn{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 4px;background:none;border:0;color:var(--ink);font:600 14px var(--text);cursor:pointer;text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--line)}
+.legend-btn:hover{color:var(--cobalt);text-decoration-color:var(--cobalt)}
+.legend-btn svg{width:18px;height:18px}
+@media (max-width:900px){.cards{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.card,.card:nth-child(4),.card:nth-child(5){grid-column:span 1}.card:nth-child(5){grid-column:span 2}}
+@media (max-width:600px){.cards{grid-template-columns:minmax(0,1fr)}.card:nth-child(5){grid-column:span 1}}
+
+/* Como funciona */
+.how{background:var(--tint)}
+.how .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,6vw,96px)}
+.how .lead{margin-top:20px}
+.timeline{margin-top:40px}
+.tl-bar{position:relative;height:56px;border-radius:16px;background:var(--cobalt);overflow:hidden}
+.tl-bar .cb{position:absolute;top:0;bottom:0;background:#fff;border:2px solid var(--cobalt);border-radius:12px;display:grid;place-items:center}
+.tl-bar .cb svg{width:22px;height:22px;color:var(--cobalt)}
+.tl-labels{display:flex;justify-content:space-between;margin-top:10px;font-weight:700;font-size:15px}
+.tl-labels span:nth-child(2){color:var(--mute);font-weight:600}
+.how-list{list-style:none;margin:0;padding:0;display:grid;gap:0;align-content:start}
+.how-list li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;padding:20px 0;border-bottom:1px solid #D5DDF6}
+.how-list li:first-child{padding-top:0}
+.how-list .ic{width:44px;height:44px;border-radius:14px;background:#fff;display:grid;place-items:center;color:var(--cobalt)}
+.how-list .ic svg{width:22px;height:22px}
+.how-list p{color:var(--mute);font-size:16px;margin-top:2px}
+.beginner{margin-top:28px;padding:24px 26px;border-radius:var(--r-panel);background:#fff;border:2px solid var(--cobalt)}
+.beginner b{display:block;font-size:19px;margin-bottom:6px}
+.beginner p{color:var(--mute)}
+@media (max-width:900px){.how .wrap{grid-template-columns:minmax(0,1fr)}}
+
+/* Para quem é */
+.who .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,96px);align-items:start}
+.who .lead{margin-top:20px}
+.chips{display:flex;flex-wrap:wrap;gap:12px;list-style:none;margin:0;padding:0}
+.chips li{padding:14px 22px;border:1.5px solid var(--ink);border-radius:999px;font-weight:600;font-size:clamp(16px,1.5vw,19px);transition:background .2s,color .2s,border-color .2s}
+.chips li:hover{background:var(--cobalt);border-color:var(--cobalt);color:#fff}
+@media (max-width:900px){.who .wrap{grid-template-columns:minmax(0,1fr)}}
+
+/* Professor */
+.teacher{background:var(--cobalt);color:#fff}
+.teacher .wrap{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(36px,6vw,96px);align-items:center}
+.photo{position:relative;border-radius:var(--r-panel);overflow:hidden;border:6px solid #fff;aspect-ratio:900/933;background:#1E56CD;transform:rotate(-2deg);box-shadow:0 40px 70px -40px rgba(0,0,0,.55)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.photo figcaption{position:absolute;left:16px;bottom:16px;background:#fff;color:var(--ink);border-radius:16px 16px 16px 4px;padding:10px 14px;font-weight:700;font-size:15px}
+.teacher h2{font-size:clamp(48px,6vw,84px)}
+.teacher .role{margin-top:8px;font-weight:600;font-size:19px;opacity:.9}
+.teacher .bio{margin-top:26px;display:grid;gap:14px;font-size:17.5px;max-width:58ch}
+.marks{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;list-style:none;padding:0}
+.marks li{padding:9px 16px;border:1.5px solid rgba(255,255,255,.55);border-radius:999px;font-weight:600;font-size:15px}
+.teacher blockquote{margin:30px 0 0;padding:0 0 0 20px;border-left:3px solid #fff;font-size:19px;font-weight:500;line-height:1.45;max-width:52ch}
+.teacher blockquote cite{display:block;margin-top:8px;font-style:normal;font-size:14px;opacity:.85}
+.social{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+@media (max-width:900px){.teacher .wrap{grid-template-columns:minmax(0,1fr)}.photo{max-width:420px}}
+@media (max-width:600px){.social .btn{flex:1 1 100%}}
+
+/* Edição */
+.edition .head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:16px}
+.status{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:var(--tint);color:var(--cobalt);font-weight:700;font-size:14px}
+.status::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+.status.closed{background:var(--bubble);color:var(--mute)}
+.ed-sub{margin-top:12px;color:var(--mute);font-size:18px}
+.ed-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr) minmax(0,.9fr);gap:16px;margin-top:44px}
+.ed-date,.ed-info,.ed-price{border-radius:var(--r-panel);padding:28px}
+.ed-date{background:var(--ink);color:#fff;display:flex;flex-direction:column;justify-content:space-between;gap:24px}
+.ed-date .wd{font-weight:600;font-size:17px;text-transform:capitalize}
+.ed-date .big{font-family:var(--display);font-size:clamp(88px,9vw,132px);line-height:.88}
+.ed-date .mo{font-family:var(--display);font-size:clamp(34px,3.4vw,46px);text-transform:uppercase;color:#9DB5F3;line-height:1}
+.ed-date .tm{font-weight:700;font-size:20px;padding-top:18px;border-top:1px solid rgba(255,255,255,.2)}
+.ed-info{border:1px solid var(--line)}
+.ed-info dl{margin:0;display:grid}
+.ed-info dl div{display:grid;grid-template-columns:7.5em minmax(0,1fr);gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.ed-info dl div:first-child{padding-top:0}
+.ed-info dl div:last-child{border-bottom:0;padding-bottom:0}
+.ed-info dt{color:var(--mute);font-size:15px}
+.ed-info dd{margin:0;font-weight:600}
+.ed-price{background:var(--cobalt);color:#fff;display:flex;flex-direction:column;gap:6px}
+.ed-price .was{font-size:17px;opacity:.85}
+.ed-price .was s{white-space:nowrap}
+.ed-price .now{font-family:var(--display);font-size:clamp(56px,5.4vw,76px);line-height:1;white-space:nowrap}
+.ed-price .msg{font-size:15px;opacity:.95}
+.ed-price .btn{margin-top:auto;width:100%}
+.ed-price .gap{flex:1;min-height:18px}
+@media (max-width:1000px){.ed-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.ed-info{grid-column:1/-1;order:3}}
+@media (max-width:600px){.ed-grid{grid-template-columns:minmax(0,1fr)}.ed-info dl div{grid-template-columns:minmax(0,1fr);gap:2px}}
+
+/* Inscrição */
+.signup{border-top:1px solid var(--line)}
+.signup .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,6vw,96px);align-items:start}
+.signup h2{font-size:clamp(40px,5.2vw,72px)}
+.signup .lead{margin-top:22px}
+.steps{margin:32px 0 0;padding:0;list-style:none;display:grid;gap:14px}
+.steps li{display:grid;grid-template-columns:36px minmax(0,1fr);gap:14px;align-items:center;font-weight:500}
+.steps b{width:36px;height:36px;border-radius:50%;border:1.5px solid var(--ink);display:grid;place-items:center;font-size:15px}
+.form{border:1px solid var(--line);border-radius:var(--r-panel);padding:clamp(22px,3vw,36px);display:grid;gap:18px;background:#fff;box-shadow:0 40px 80px -56px rgba(17,17,17,.4)}
+.form label{display:grid;gap:8px;font-weight:600;font-size:15px}
+.form label>span{display:block}
+.form label small{font-weight:500;color:var(--mute)}
+.form input,.form select,.form textarea{width:100%;font:500 16px/1.4 var(--text);color:var(--ink);background:#fff;border:1.5px solid #CDD1D8;border-radius:14px;padding:14px 16px;min-height:52px;transition:border-color .2s,box-shadow .2s}
+.form textarea{min-height:96px;resize:vertical}
+.form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:var(--cobalt);box-shadow:0 0 0 4px rgba(49,94,219,.16)}
+.form .err{color:#C0262D;font-size:14px;font-weight:600;min-height:0}
+.form [aria-invalid=true]{border-color:#C0262D}
+.form .btn{width:100%;min-height:58px;font-size:16px}
+.form .note{font-size:14px;color:var(--mute);text-align:center}
+.done{display:none;gap:16px}
+.form.sent .fields{display:none}
+.form.sent .done{display:grid}
+.done h3{font-size:24px}
+.done pre{margin:0;white-space:pre-wrap;font:500 15px/1.5 var(--text);background:var(--bubble);border-radius:var(--r-bubble);border-bottom-right-radius:6px;padding:16px 18px;max-height:220px;overflow:auto}
+.done .row2{display:flex;flex-wrap:wrap;gap:10px}
+.done .row2 .btn{flex:1 1 200px}
+.linkbtn{background:none;border:0;padding:8px 0;font:600 15px var(--text);color:var(--mute);text-decoration:underline;cursor:pointer;justify-self:start}
+.fields{display:grid;gap:18px}
+@media (max-width:900px){.signup .wrap{grid-template-columns:minmax(0,1fr)}}
+
+/* FAQ */
+.faq .wrap{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(32px,6vw,96px)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-child{border-top:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;align-items:center;padding:22px 0;font-weight:700;font-size:clamp(17px,1.6vw,20px)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary i{flex:none;width:32px;height:32px;border-radius:50%;border:1.5px solid var(--ink);position:relative;transition:background .2s,border-color .2s,transform .3s var(--ease)}
+.faq summary i::before,.faq summary i::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:2px;background:currentColor;transform:translate(-50%,-50%)}
+.faq summary i::after{transform:translate(-50%,-50%) rotate(90deg)}
+.faq details[open] summary i{transform:rotate(45deg);background:var(--cobalt);border-color:var(--cobalt);color:#fff}
+.faq summary:hover{color:var(--cobalt)}
+.faq details p{padding:0 48px 24px 0;color:var(--mute);max-width:62ch}
+@media (max-width:900px){.faq .wrap{grid-template-columns:minmax(0,1fr)}}
+
+/* Rodapé */
+.foot{border-top:1px solid var(--line);padding:56px max(5vw,20px) 120px}
+.foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px;align-items:flex-start}
+.foot img{height:84px;width:auto}
+.foot p{color:var(--mute);font-size:15px;margin-top:12px}
+.foot nav{display:flex;flex-wrap:wrap;gap:12px 28px;font-weight:600}
+.foot nav a{text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.foot nav a:hover{color:var(--cobalt)}
+
+/* Barra fixa (mobile) */
+.dock{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;display:none;align-items:center;gap:12px;padding:10px 10px 10px 18px;background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:0 20px 44px -20px rgba(17,17,17,.45);transform:translateY(140%);transition:transform .4s var(--ease)}
+.dock.show{transform:none}
+.dock div{line-height:1.2}
+.dock b{display:block;font-size:17px;color:var(--cobalt);white-space:nowrap}
+.dock small{color:var(--mute);font-size:13px;white-space:nowrap}
+.dock .btn{margin-left:auto;min-height:46px;padding:0 18px;font-size:13px}
+@media (max-width:900px){.dock{display:flex}.foot{padding-bottom:130px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<header class="hdr" id="topo">
+  <a class="logo" href="#topo" aria-label="SEM LEGENDA, início"><img src="assets/logo-sm.png" alt="SEM LEGENDA — Inglês imersivo" width="280" height="222"></a>
+  <nav aria-label="Seções">
+    <a href="#workshop">O workshop</a>
+    <a href="#professor">Professor</a>
+    <a href="#edicao">Próxima edição</a>
+    <a href="#faq">Dúvidas</a>
+  </nav>
+  <a class="btn" href="#inscricao" data-cta="short">Inscrever-se</a>
+</header>
+
+<main>
+<!-- HERO + CONVERSA -->
+<section class="story" aria-label="Abertura">
+  <div class="stage" id="stage">
+    <div class="stage-grid">
+      <div class="lede">
+        <h1>Seu inglês começa quando você começa a usar.</h1>
+        <p class="lead">Uma experiência presencial para sair da teoria, experimentar o inglês e descobrir que você consegue se comunicar muito mais do que imagina.</p>
+        <div class="actions"><a class="btn" href="#inscricao" data-cta="hero">Quero viver essa experiência</a></div>
+        <ul class="facts" aria-label="Informações da edição">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span data-f="date_hero">Sábado, 05/12</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-f="time_range">14h às 18h</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span data-f="location">Itapetininga/SP</span></li>
+          <li class="price"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg><span data-f="price_now">R$ 89,90</span></li>
+        </ul>
+        <div class="peek" aria-hidden="true">
+          <span class="avatar">MA</span>
+          <div><b>Mariana, Recrutamento</b><span>Gostamos muito do seu currículo. Podemos…</span></div>
+        </div>
+      </div>
+
+      <div class="chat" role="log" aria-label="Conversa de exemplo com uma recrutadora">
+        <div class="chat-top">
+          <span class="avatar" aria-hidden="true">MA</span>
+          <div><b>Mariana, Recrutamento</b><small><span class="dot" aria-hidden="true"></span>online</small></div>
+        </div>
+        <div class="chat-body">
+          <span class="day">Hoje</span>
+          <button class="hint-in" type="button" data-hint aria-label="Role para baixo para ver a conversa"><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></span>Role para baixo<small>para ver a conversa</small></button>
+          <div class="row in hid" data-s="1"><div><p class="bubble">Gostamos muito do seu currículo. Podemos seguir para a entrevista em inglês?<time>14:02</time></p></div></div>
+          <div class="row out hid" data-s="2" data-until="3"><div><p class="typing" aria-label="Você está digitando"><i></i><i></i><i></i></p></div></div>
+          <div class="row in hid" data-s="3"><div><p class="bubble">Você ainda está aí?<time>14:09</time></p></div></div>
+        </div>
+        <div class="composer" aria-hidden="true">
+          <div class="field"><span class="caret"></span>Mensagem</div>
+          <span class="send"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12 20 4l-6 16-3-7-7-1z"/></svg></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="impact">
+      <p class="l1">Não deixe o inglês deixar você sem resposta.</p>
+      <p class="l2">Viva inglês <span class="tag">sem</span> legenda.</p>
+    </div>
+    <button class="hint" type="button" id="hint" data-hint aria-label="Role para baixo para ver a conversa"><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></span><span class="d">Role para baixo</span><span class="m">Deslize para ver a conversa</span></button>
+  </div>
+</section>
+
+<!-- 2. PROBLEMA -->
+<section class="band problem" aria-labelledby="t-problema">
+  <div class="wrap">
+    <div class="rv">
+      <h2 id="t-problema">Você já estudou inglês, mas ainda trava na hora de falar?</h2>
+      <p class="lead">A mensagem chegou e a resposta não saiu. Se você se reconheceu na conversa lá em cima, provavelmente também se reconhece em alguma destas situações.</p>
+      <p class="close">Nada disso é falta de capacidade. É falta de uso, e uso se treina.</p>
+    </div>
+    <ul class="pains rv">
+      <li><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>Você entende algumas coisas, mas não consegue responder.</li>
+      <li><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>Você sabe regras gramaticais, mas não consegue manter uma conversa.</li>
+      <li><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>Você tem medo de errar.</li>
+      <li><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>Você fica nervoso quando alguém começa a falar inglês.</li>
+      <li><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>Você sente que precisa de mais prática.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 3. SOLUÇÃO -->
+<section class="band solution" id="workshop" aria-labelledby="t-solucao">
+  <div class="wrap">
+    <div class="head rv">
+      <h2 id="t-solucao">Conheça o SEM LEGENDA.</h2>
+      <p class="lead">Um workshop presencial de inglês para a vida real. Em vez de passar a tarde ouvindo explicação, você passa a tarde usando o idioma, em situações que acontecem de verdade, com atividades práticas e muita interação.</p>
+    </div>
+    <p class="statement rv">Não é uma aula tradicional. <span>É uma experiência de imersão e prática.</span></p>
+    <div class="pillars rv">
+      <div><h3>Imersão</h3><p>Durante o workshop, o inglês sai do caderno e vira a língua da sala.</p></div>
+      <div><h3>Situações reais</h3><p>Aeroporto, hotel, restaurante, compras, entrevista de emprego, conversa do dia a dia.</p></div>
+      <div><h3>Comunicação primeiro</h3><p>O objetivo não é aprender todas as regras. É começar a usar o idioma, e errar faz parte.</p></div>
+    </div>
+    <div class="video" id="video" hidden></div>
+  </div>
+</section>
+
+<!-- 4. O QUE VOCÊ VAI EXPERIMENTAR -->
+<section class="band exp" aria-labelledby="t-exp">
+  <div class="wrap">
+    <div class="top rv">
+      <h2 id="t-exp">O que você vai experimentar</h2>
+      <p>Aqui as frases vêm sem legenda, como na vida real. Se precisar, toque para ver a tradução.</p>
+    </div>
+    <div class="cards" id="cards"></div>
+  </div>
+</section>
+
+<!-- 5. COMO FUNCIONA -->
+<section class="band how" aria-labelledby="t-how">
+  <div class="wrap">
+    <div class="rv">
+      <h2 id="t-how">Como funciona</h2>
+      <p class="lead">Uma tarde inteira dedicada a usar o inglês, com uma pausa no meio para respirar, comer bem e continuar conversando.</p>
+      <div class="timeline" aria-label="Linha do tempo do workshop">
+        <div class="tl-bar"><span class="cb" id="cb" title="Coffee break"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9zM17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 3v3M12 3v3"/></svg></span></div>
+        <div class="tl-labels"><span data-f="start">14h</span><span>coffee break de ~30 min</span><span data-f="end">18h</span></div>
+      </div>
+      <div class="beginner">
+        <b>Pensado também para iniciantes.</b>
+        <p>Você não precisa chegar falando. Precisa chegar disposto a tentar. As atividades foram pensadas para que quem está começando também participe de verdade.</p>
+      </div>
+    </div>
+    <ul class="how-list rv">
+      <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><div><h3>Workshop presencial</h3><p>Gente de verdade, na mesma sala, em <span data-f="location">Itapetininga/SP</span>.</p></div></li>
+      <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h3>Experiência de <span data-f="duration">4 horas</span></h3><p>Tempo suficiente para perder a vergonha e ganhar ritmo.</p></div></li>
+      <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.8 7L4 20l1.1-4.6A8 8 0 1 1 21 12z"/></svg></span><div><h3>Atividades práticas e interativas</h3><p>Dinâmicas em dupla e em grupo, simulações e muita conversa.</p></div></li>
+      <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/><circle cx="12" cy="12" r="10"/></svg></span><div><h3>Imersão em inglês</h3><p>Ouvir, entender e responder no próprio idioma, no seu ritmo.</p></div></li>
+      <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9zM17 10h1.5a2.5 2.5 0 0 1 0 5H17"/></svg></span><div><h3>Coffee break especial</h3><p data-f="coffee">Coffee break especial de aproximadamente 30 minutos</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 6. PARA QUEM É -->
+<section class="band who" aria-labelledby="t-who">
+  <div class="wrap">
+    <div class="rv">
+      <h2 id="t-who">Para quem é</h2>
+      <p class="lead">Jovens e adultos que querem usar o inglês de verdade. Não é necessário ter conhecimento avançado do idioma.</p>
+    </div>
+    <ul class="chips rv">
+      <li>Iniciantes</li>
+      <li>Quem já estudou, mas trava para falar</li>
+      <li>Quem quer viajar para o exterior</li>
+      <li>Quem quer se comunicar melhor em inglês</li>
+      <li>Quem busca novas oportunidades profissionais</li>
+      <li>Quem quer ganhar confiança para falar</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 7. PROFESSOR -->
+<section class="band teacher" id="professor" aria-labelledby="t-prof">
+  <div class="wrap">
+    <figure class="photo rv" style="margin:0">
+      <img src="assets/bruno.jpg" alt="Foto de Bruno Santos, Teacher Bruno, sorrindo" width="900" height="933">
+      <figcaption>Hi! I'm Bruno.</figcaption>
+    </figure>
+    <div class="rv">
+      <h2 id="t-prof">Bruno Santos</h2>
+      <p class="role">Teacher Bruno, professor de inglês e criador do SEM LEGENDA</p>
+      <div class="bio">
+        <p>Bruno começou a ensinar inglês em 2018, como instrutor voluntário em um projeto social da sua cidade. Foi ali que descobriu a afinidade com a educação e com o desenvolvimento de pessoas por meio do aprendizado.</p>
+        <p>Começou dando aulas para crianças e, com o tempo, direcionou o trabalho para adultos. Hoje ensina líderes, gestores e profissionais de áreas como Pesquisa e Desenvolvimento, Manutenção, Financeiro, Produção e Gestão de Projetos.</p>
+        <p>A abordagem é comunicativa: o inglês é usado desde o primeiro momento, sempre conectado à realidade e aos objetivos de cada aluno. É essa prática que ele traz para o SEM LEGENDA.</p>
+      </div>
+      <ul class="marks">
+        <li>Ensinando desde 2018</li>
+        <li>Crianças, jovens e adultos</li>
+        <li>Abordagem comunicativa</li>
+        <li>Inglês para a vida e o trabalho</li>
+      </ul>
+      <blockquote>“Meu propósito é ajudar cada aluno a ampliar suas possibilidades de comunicação, superar barreiras e conquistar mais autonomia para utilizar o inglês.”<cite>Bruno Santos</cite></blockquote>
+      <div class="social">
+        <a class="btn white" data-link="instagram" href="https://www.instagram.com/teacherbrunosantos" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>Instagram</a>
+        <a class="btn white" data-link="linkedin" href="https://www.linkedin.com/in/bruno-santos-24250a1ba" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM3.3 9h3.4v11.5H3.3zM9 9h3.3v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.2 2.3 4.2 5.4v6.4h-3.4v-5.7c0-1.4 0-3.1-1.9-3.1s-2.2 1.5-2.2 3v5.8H9z"/></svg>LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. EDIÇÃO -->
+<section class="band edition" id="edicao" aria-labelledby="t-ed">
+  <div class="wrap">
+    <div class="head rv">
+      <div>
+        <h2 id="t-ed" data-f="title">SEM LEGENDA — Survival English</h2>
+        <p class="ed-sub" data-f="description">Uma tarde de imersão com situações práticas de comunicação.</p>
+      </div>
+      <span class="status" id="status">Inscrições abertas</span>
+    </div>
+    <div class="ed-grid">
+      <div class="ed-date rv">
+        <span class="wd" data-f="weekday">sábado</span>
+        <div><div class="big" data-f="day">05</div><div class="mo" data-f="month">dezembro</div></div>
+        <span class="tm" data-f="time_range">14h às 18h</span>
+      </div>
+      <div class="ed-info rv">
+        <dl>
+          <div><dt>Local</dt><dd data-f="location">Itapetininga/SP</dd></div>
+          <div><dt>Endereço</dt><dd data-f="address">Endereço completo enviado na confirmação pelo WhatsApp</dd></div>
+          <div><dt>Modalidade</dt><dd data-f="mode">Presencial</dd></div>
+          <div><dt>Duração</dt><dd data-f="duration">4 horas</dd></div>
+          <div><dt>Inclui</dt><dd>Coffee break especial</dd></div>
+        </dl>
+      </div>
+      <div class="ed-price rv">
+        <span class="was" data-if="promo">De <s data-f="price_old">R$ 119,90</s> por</span>
+        <span class="now" data-f="price_now">R$ 89,90</span>
+        <span class="msg" data-if="promo" data-f="promo_msg">Valor promocional da primeira edição.</span>
+        <span class="gap"></span>
+        <a class="btn white" href="#inscricao" data-cta="main">Quero me inscrever</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. INSCRIÇÃO -->
+<section class="band signup" id="inscricao" aria-labelledby="t-sign">
+  <div class="wrap">
+    <div class="rv">
+      <h2 id="t-sign" data-f="signup_title">Pronto para viver o inglês sem legenda?</h2>
+      <p class="lead" data-f="signup_text">Garanta sua inscrição e venha experimentar uma maneira diferente de utilizar o inglês.</p>
+      <ol class="steps">
+        <li><b>1</b>Preencha seus dados ao lado.</li>
+        <li><b>2</b>Sua mensagem para o WhatsApp é montada automaticamente.</li>
+        <li><b>3</b>O Bruno responde e combina com você a confirmação e o pagamento.</li>
+      </ol>
+    </div>
+    <form class="form rv" id="form" novalidate>
+      <div class="fields">
+        <label><span>Nome completo</span>
+          <input id="f-nome" name="nome" autocomplete="name" required placeholder="Como você se chama?">
+        </label>
+        <label><span>WhatsApp</span>
+          <input id="f-wpp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel-national" required placeholder="(15) 99999-9999">
+        </label>
+        <label><span>Nível de inglês <small>(opcional)</small></span>
+          <select id="f-nivel" name="nivel">
+            <option value="">Selecione</option>
+            <option>Nunca estudei</option>
+            <option>Sei algumas palavras</option>
+            <option>Já estudei, mas travo para falar</option>
+            <option>Consigo conversar um pouco</option>
+            <option>Converso bem</option>
+          </select>
+        </label>
+        <label><span>O que te motiva a participar? <small>(opcional)</small></span>
+          <textarea id="f-mot" name="motivacao" placeholder="Viagem, trabalho, entrevista, confiança…"></textarea>
+        </label>
+        <p class="err" id="f-err" role="alert"></p>
+        <button class="btn" type="submit" data-cta="submit">Quero me inscrever</button>
+        <p class="note">Ao enviar, você será levado ao WhatsApp do Bruno (<span data-f="wpp_display">+55 87 99186-3260</span>). A vaga só é confirmada pelo atendimento.</p>
+      </div>
+      <div class="done" aria-live="polite">
+        <h3>Sua mensagem está pronta.</h3>
+        <p>Envie pelo WhatsApp para o Bruno. Ele responde com os próximos passos para confirmar sua vaga.</p>
+        <pre id="f-preview"></pre>
+        <div class="row2">
+          <a class="btn" id="f-open" href="#" target="_blank" rel="noopener">Abrir WhatsApp</a>
+          <button class="btn ghost" type="button" id="f-copy">Copiar mensagem</button>
+        </div>
+        <button class="linkbtn" type="button" id="f-edit">Editar meus dados</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- 10. FAQ -->
+<section class="band faq" id="faq" aria-labelledby="t-faq">
+  <div class="wrap">
+    <h2 id="t-faq" class="rv">Dúvidas frequentes</h2>
+    <div class="rv" id="faq-list"></div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <img src="assets/logo.png" alt="SEM LEGENDA — Inglês imersivo" width="623" height="495">
+      <p>Um workshop de inglês para a vida real.<br>Com Teacher Bruno Santos, em Itapetininga, São Paulo.</p>
+    </div>
+    <nav aria-label="Contato">
+      <a data-link="instagram" href="https://www.instagram.com/teacherbrunosantos" target="_blank" rel="noopener">Instagram</a>
+      <a data-link="linkedin" href="https://www.linkedin.com/in/bruno-santos-24250a1ba" target="_blank" rel="noopener">LinkedIn</a>
+      <a data-link="whatsapp" href="https://wa.me/5587991863260" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="#inscricao">Inscrição</a>
+    </nav>
+  </div>
+</footer>
+
+<div class="dock" id="dock" aria-hidden="true">
+  <div><b data-f="price_now">R$ 89,90</b><small data-f="date_dock">Sáb, 05/12, 14h às 18h</small></div>
+  <a class="btn" href="#inscricao" data-cta="short" tabindex="-1">Quero me inscrever</a>
+</div>
+
+<script src="edicao.js"></script>
+<script>
+{
+const E = Object.assign({event_title:"SEM LEGENDA",event_date:"",event_start_time:"",event_end_time:"",original_price:0,promotional_price:0,promotion_active:false,registration_status:"open",registration_link:"",event_video_url:""}, window.SEM_LEGENDA_EDICAO||{});
+const M = Object.assign({whatsapp:"5587991863260",whatsapp_display:"+55 87 99186-3260"}, window.SEM_LEGENDA_MARCA||{});
+const $ = (s,r=document)=>r.querySelector(s), $$ = (s,r=document)=>[...r.querySelectorAll(s)];
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const root = document.documentElement;
+root.classList.add("js"); if(!reduce) root.classList.add("anim");
+
+/* ---------- Formatação dos dados da edição ---------- */
+const brl = n => Number(n).toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
+const hhmm = t => { if(!t) return ""; const [h,m]=t.split(":"); return (+h)+"h"+(m&&m!=="00"?m:""); };
+const toMin = t => { const [h,m]=(t||"0:0").split(":").map(Number); return h*60+(m||0); };
+const [Y,Mo,D] = (E.event_date||"").split("-").map(Number);
+const dt = Y ? new Date(Y,Mo-1,D) : null;
+const cap = s => s.charAt(0).toUpperCase()+s.slice(1);
+const wd = dt ? dt.toLocaleDateString("pt-BR",{weekday:"long"}) : "";
+const dShort = dt ? String(D).padStart(2,"0")+"/"+String(Mo).padStart(2,"0") : "Data a definir";
+const promo = !!E.promotion_active && E.promotional_price>0;
+const st = E.registration_status||"open";
+const F = {
+  title:E.event_title, description:E.event_description, location:E.event_location, address:E.event_address,
+  duration:E.event_duration, mode:E.event_mode||"Presencial", coffee:E.coffee_break||"Coffee break especial",
+  weekday:wd||"data", day:dt?String(D).padStart(2,"0"):"—", month:dt?dt.toLocaleDateString("pt-BR",{month:"long"}):"a definir",
+  date_hero: dt ? cap(wd)+", "+dShort : "Data a definir",
+  date_dock: dt ? cap(wd.slice(0,3))+", "+dShort+", "+hhmm(E.event_start_time)+" às "+hhmm(E.event_end_time) : "Próxima edição em breve",
+  time_range: E.event_start_time ? hhmm(E.event_start_time)+" às "+hhmm(E.event_end_time) : "Horário a definir",
+  start:hhmm(E.event_start_time), end:hhmm(E.event_end_time),
+  price_now: brl(promo?E.promotional_price:E.original_price), price_old: brl(E.original_price),
+  promo_msg:E.promotional_message||"", wpp_display:M.whatsapp_display,
+  signup_title: st==="open" ? "Pronto para viver o inglês sem legenda?" : "Quer participar da próxima edição?",
+  signup_text: st==="open" ? "Garanta sua inscrição e venha experimentar uma maneira diferente de utilizar o inglês." : "Deixe seus dados e o Bruno avisa você pelo WhatsApp assim que as inscrições abrirem."
+};
+$$("[data-f]").forEach(el=>{ const v=F[el.dataset.f]; if(v!=null && v!=="") el.textContent=v; });
+$$("[data-if=promo]").forEach(el=>el.hidden=!promo);
+$$("[data-link]").forEach(a=>{ const k=a.dataset.link; if(k==="whatsapp") a.href="https://wa.me/"+M.whatsapp; else if(M[k]) a.href=M[k]; });
+
+/* Status e botões */
+const status=$("#status");
+status.textContent = {open:"Inscrições abertas",soon:"Inscrições em breve",closed:"Inscrições encerradas"}[st]||"Inscrições abertas";
+status.classList.toggle("closed", st!=="open");
+const ctaText = st==="open" ? null : (st==="soon"?"Quero ser avisado":"Avise-me da próxima");
+$$("[data-cta]").forEach(a=>{
+  if(ctaText && a.dataset.cta!=="short") a.textContent=ctaText;
+  if(E.registration_link && st==="open" && a.tagName==="A"){ a.href=E.registration_link; a.target="_blank"; a.rel="noopener"; }
+});
+
+/* Linha do tempo: coffee break no meio da tarde */
+{ const tot=Math.max(60,toMin(E.event_end_time)-toMin(E.event_start_time)), w=30/tot*100;
+  const cb=$("#cb"); cb.style.width=Math.max(w,9)+"%"; cb.style.left=(50-Math.max(w,9)/2)+"%"; }
+
+/* Vídeo opcional */
+if(E.event_video_url){
+  const v=$("#video"), u=E.event_video_url, yt=u.match(/(?:youtu\.be\/|v=|shorts\/|embed\/)([\w-]{11})/);
+  v.innerHTML = yt ? `<iframe src="https://www.youtube-nocookie.com/embed/${yt[1]}" title="Vídeo do SEM LEGENDA" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>`
+                   : `<video src="${u.replace(/"/g,"")}" controls playsinline preload="metadata"></video>`;
+  v.hidden=false;
+}
+
+/* ---------- Cards com "legenda" ---------- */
+const CARDS=[
+  ["Inglês para viagens","Aeroporto, hotel, restaurante e compras sem depender do tradutor.","Could I get a window seat, please?","Pode me dar um assento na janela, por favor?"],
+  ["Inglês para entrevistas","Apresentar-se, falar da sua experiência e responder com calma.","Tell me a little about yourself.","Fale um pouco sobre você."],
+  ["Situações cotidianas","Pedir, perguntar, agradecer e resolver pequenos imprevistos.","Sorry, could you say that again?","Desculpa, pode repetir?"],
+  ["Conversação e interação","Puxar assunto, manter a conversa andando e reagir ao que o outro diz.","So, what do you do?","E aí, você trabalha com o quê?"],
+  ["Expressões e vocabulário prático","O inglês que as pessoas realmente falam, e não só o do livro.","No worries, I've got it.","Tranquilo, deixa comigo."]
+];
+$("#cards").innerHTML = CARDS.map((c,i)=>`<article class="card rv">
+  <h3>${c[0]}</h3><p class="d">${c[1]}</p>
+  <p class="en" lang="en">${c[2]}</p>
+  <div class="sub" id="leg${i}"><span>${c[3]}</span></div>
+  <button class="legend-btn" type="button" aria-expanded="false" aria-controls="leg${i}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M7 15h4M13 15h4M7 11h10"/></svg><span>Ver legenda</span></button>
+</article>`).join("");
+$$(".legend-btn").forEach(b=>b.addEventListener("click",()=>{
+  const c=b.closest(".card"), o=!c.classList.contains("open");
+  c.classList.toggle("open",o); b.setAttribute("aria-expanded",o); b.lastElementChild.textContent=o?"Esconder legenda":"Ver legenda";
+}));
+
+/* ---------- FAQ ---------- */
+const FAQ=[
+  ["Preciso saber inglês para participar?","Não. O workshop foi pensado também para pessoas iniciantes."],
+  ["O workshop é uma aula tradicional?","Não. A proposta é oferecer uma experiência de imersão com atividades práticas e interativas."],
+  ["O evento é presencial?",`Sim. A experiência acontece presencialmente em ${E.event_location||"Itapetininga/SP"}.`],
+  ["Quanto tempo dura?",`A duração prevista é de ${E.event_duration||"quatro horas"}.`],
+  ["O que acontece durante o workshop?","Os participantes experimentam situações práticas de comunicação em inglês, com atividades contextualizadas e interativas."],
+  ["Existe coffee break?","Sim. A experiência inclui um coffee break especial."],
+  ["Vou sair fluente em inglês?","Não existe promessa de fluência em poucas horas. O objetivo é oferecer uma experiência prática que ajude você a começar a utilizar o idioma com mais confiança."],
+  ["Como faço minha inscrição?","Preencha o formulário disponível na página e finalize o contato pelo WhatsApp."]
+];
+$("#faq-list").innerHTML = FAQ.map(q=>`<details><summary>${q[0]}<i aria-hidden="true"></i></summary><p>${q[1]}</p></details>`).join("");
+
+/* ---------- Formulário → WhatsApp ---------- */
+const form=$("#form"), nome=$("#f-nome"), wpp=$("#f-wpp"), err=$("#f-err"), open=$("#f-open"), prev=$("#f-preview");
+wpp.addEventListener("input",()=>{
+  let d=wpp.value.replace(/\D/g,"").slice(0,11), o=d;
+  if(d.length>2) o="("+d.slice(0,2)+") "+d.slice(2);
+  if(d.length>6) o="("+d.slice(0,2)+") "+d.slice(2,d.length===11?7:6)+"-"+d.slice(d.length===11?7:6);
+  wpp.value=o;
+});
+let msg="";
+form.addEventListener("submit",ev=>{
+  ev.preventDefault();
+  const n=nome.value.trim(), w=wpp.value.replace(/\D/g,"");
+  nome.setAttribute("aria-invalid", n.length<3); wpp.setAttribute("aria-invalid", w.length<10);
+  if(n.length<3){ err.textContent="Escreva seu nome completo."; nome.focus(); return; }
+  if(w.length<10){ err.textContent="Confira seu WhatsApp com DDD, por exemplo (15) 99999-9999."; wpp.focus(); return; }
+  err.textContent="";
+  const when = dt ? ` (${dShort}, ${F.time_range}, ${E.event_location})` : "";
+  const intro = st==="open" ? `Olá, Bruno! Quero me inscrever no ${E.event_title}${when}.` : `Olá, Bruno! Quero ser avisado(a) da próxima edição do SEM LEGENDA.`;
+  const lines=[intro,"",`Nome: ${n}`,`WhatsApp: ${wpp.value}`];
+  if($("#f-nivel").value) lines.push(`Nível de inglês: ${$("#f-nivel").value}`);
+  if($("#f-mot").value.trim()) lines.push(`Motivação: ${$("#f-mot").value.trim()}`);
+  msg=lines.join("\n");
+  const url="https://wa.me/"+M.whatsapp+"?text="+encodeURIComponent(msg);
+  open.href=url; prev.textContent=msg;
+  form.classList.add("sent");
+  let w2=null; try{ w2=window.open(url,"_blank","noopener"); }catch(e){}
+  open.focus();
+});
+$("#f-edit").addEventListener("click",()=>{ form.classList.remove("sent"); nome.focus(); });
+$("#f-copy").addEventListener("click",async e=>{
+  const b=e.currentTarget;
+  try{ await navigator.clipboard.writeText(msg); b.textContent="Mensagem copiada"; }
+  catch(_){ const r=document.createRange(); r.selectNodeContents(prev); const s=getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent="Texto selecionado, copie com Ctrl+C"; }
+  setTimeout(()=>b.textContent="Copiar mensagem",2600);
+});
+
+/* ---------- SEO: dados estruturados do evento ---------- */
+if(dt){
+  const iso=(t)=>`${E.event_date}T${(t||"00:00")}:00-03:00`;
+  const ld={"@context":"https://schema.org","@type":"Event",name:E.event_title,description:E.event_description,
+    startDate:iso(E.event_start_time),endDate:iso(E.event_end_time),eventAttendanceMode:"https://schema.org/OfflineEventAttendanceMode",
+    eventStatus:"https://schema.org/EventScheduled",
+    location:{"@type":"Place",name:E.event_location,address:{"@type":"PostalAddress",addressLocality:"Itapetininga",addressRegion:"SP",addressCountry:"BR"}},
+    organizer:{"@type":"Person",name:"Bruno Santos",url:M.site},performer:{"@type":"Person",name:"Bruno Santos"},
+    image:[(M.site||"")+"/assets/og.jpg"],
+    offers:{"@type":"Offer",price:(promo?E.promotional_price:E.original_price).toFixed(2),priceCurrency:"BRL",url:M.site,availability: st==="open"?"https://schema.org/InStock":"https://schema.org/SoldOut"}};
+  const s=document.createElement("script"); s.type="application/ld+json"; s.textContent=JSON.stringify(ld); document.head.appendChild(s);
+}
+
+/* ---------- Narrativa do chat guiada pelo scroll ---------- */
+const story=$(".story"), stage=$("#stage"), rows=$$(".row[data-s]");
+const TH=[.06,.22,.38,.58,.74];
+let cur=-1;
+function setStep(s){
+  if(s===cur) return; cur=s;
+  for(let i=1;i<=5;i++) stage.classList.toggle("at-"+i,i<=s);
+  rows.forEach(r=>{ const on = s>=+r.dataset.s && !(r.dataset.until && s>=+r.dataset.until); r.classList.toggle("hid",!on); });
+}
+function tick(){
+  if(!root.classList.contains("anim")) return;
+  const r=story.getBoundingClientRect(), tot=r.height-innerHeight;
+  const p=Math.min(1,Math.max(0,-r.top/Math.max(1,tot)));
+  let s=0; TH.forEach((t,i)=>{ if(p>=t) s=i+1; }); setStep(s);
+}
+if(root.classList.contains("anim")){
+  setStep(0); tick();
+  requestAnimationFrame(()=>setTimeout(()=>stage.classList.add("ready"),60));
+} else {
+  rows.forEach(r=>r.classList.toggle("hid", !!r.dataset.until));
+  $$(".row[data-until]").forEach(r=>r.hidden=true);
+}
+
+$$("[data-hint]").forEach(h=>h.addEventListener("click",()=>{
+  const r=story.getBoundingClientRect(), tot=r.height-innerHeight;
+  scrollTo({top:scrollY+r.top+tot*(TH[0]+.04),behavior:"smooth"});
+}));
+
+/* Cabeçalho, barra fixa e revelação das seções */
+const hdr=$(".hdr"), dock=$("#dock"), signup=$("#inscricao");
+let signupVisible=false, raf=0;
+function onScroll(){
+  raf=0; tick();
+  hdr.classList.toggle("scrolled", scrollY>8);
+  const past = story.getBoundingClientRect().bottom < innerHeight*.6;
+  const show = past && !signupVisible;
+  dock.classList.toggle("show", show); dock.setAttribute("aria-hidden", !show);
+  dock.querySelector("a").tabIndex = show?0:-1;
+}
+addEventListener("scroll",()=>{ if(!raf) raf=requestAnimationFrame(onScroll); },{passive:true});
+addEventListener("resize",()=>{ if(!raf) raf=requestAnimationFrame(onScroll); });
+const sio=new IntersectionObserver(es=>{ es.forEach(e=>signupVisible=e.isIntersecting); onScroll(); },{threshold:.05});
+sio.observe(signup);
+const rio=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); rio.unobserve(e.target); } }),{rootMargin:"0px 0px -8% 0px"});
+$$(".rv").forEach((el,i)=>{ el.style.transitionDelay = el.classList.contains("card") ? (i%3)*90+"ms" : "0ms"; rio.observe(el); });
+onScroll();
+}
+</script>
+</body>
+</html>
